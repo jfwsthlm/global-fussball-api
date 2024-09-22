@@ -1766,8 +1766,8 @@
         "homeTeam": "IFK Göteborg",
         "awayTeam": "Hammarby",
         "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 160
     },
     {
@@ -1776,9 +1776,9 @@
         "round": "21",
         "homeTeam": "Malmö FF",
         "awayTeam": "Djurgården",
-        "homeGoals": 0,
+        "homeGoals": 4,
         "awayGoals": 0,
-        "isPlayed": "no",
+        "isPlayed": "yes",
         "index": 161
     },
     {
@@ -1787,9 +1787,9 @@
         "round": "21",
         "homeTeam": "IFK Norrköping",
         "awayTeam": "BK Häcken",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "isPlayed": "yes",
         "index": 162
     },
     {
@@ -1798,9 +1798,9 @@
         "round": "21",
         "homeTeam": "Gais",
         "awayTeam": "Kalmar FF",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 163
     },
     {
@@ -1809,9 +1809,9 @@
         "round": "21",
         "homeTeam": "Mjällby AIF",
         "awayTeam": "Halmstad",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 164
     },
     {
@@ -1821,8 +1821,8 @@
         "homeTeam": "IFK Värnamo",
         "awayTeam": "AIK",
         "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 165
     },
     {
@@ -1831,9 +1831,9 @@
         "round": "21",
         "homeTeam": "Brommapojkarna",
         "awayTeam": "Elfsborg",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "isPlayed": "yes",
         "index": 166
     },
     {
@@ -1842,9 +1842,9 @@
         "round": "21",
         "homeTeam": "Västerås SK",
         "awayTeam": "Sirius",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "isPlayed": "yes",
         "index": 167
     },
     {
@@ -1855,7 +1855,7 @@
         "awayTeam": "Malmö FF",
         "homeGoals": 0,
         "awayGoals": 0,
-        "isPlayed": "no",
+        "isPlayed": "yes",
         "index": 168
     },
     {
@@ -1864,9 +1864,9 @@
         "round": "22",
         "homeTeam": "Djurgården",
         "awayTeam": "Mjällby AIF",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 169
     },
     {
@@ -1886,9 +1886,9 @@
         "round": "22",
         "homeTeam": "BK Häcken",
         "awayTeam": "IFK Göteborg",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "isPlayed": "yes",
         "index": 171
     },
     {
@@ -1898,8 +1898,8 @@
         "homeTeam": "Halmstad",
         "awayTeam": "Elfsborg",
         "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 172
     },
     {
@@ -1908,9 +1908,9 @@
         "round": "22",
         "homeTeam": "Sirius",
         "awayTeam": "Brommapojkarna",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "isPlayed": "yes",
         "index": 173
     },
     {
@@ -1919,9 +1919,9 @@
         "round": "22",
         "homeTeam": "Kalmar FF",
         "awayTeam": "IFK Värnamo",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "isPlayed": "yes",
         "index": 174
     },
     {
@@ -1930,9 +1930,9 @@
         "round": "22",
         "homeTeam": "Västerås SK",
         "awayTeam": "Gais",
-        "homeGoals": 0,
-        "awayGoals": 0,
-        "isPlayed": "no",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "isPlayed": "yes",
         "index": 175
     },
     {

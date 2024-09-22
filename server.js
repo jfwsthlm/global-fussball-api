@@ -4,16 +4,14 @@ const cors = require('cors');
 const app = express();
 const season = require('./controllers/season');
 const knex = require('knex');
+require('dotenv').config()
+
 const db = knex({
-    client: 'mysql',
+    client: 'postgresql',
     connection: {
-      host: '127.0.0.1',
-      port: 3308,
-      user: 'iipax',
-      password: 'iipax123',
-      database: 'liga_nord',
-    },
-  });
+        connectionString: process.env.DATABASE_URL
+    }
+});
 
 app.use(bodyParser.json());
 app.use(cors());

@@ -3,22 +3,22 @@ const savedGames = require('./matcher.json');
 handleGetSeason = (req, res, db)  => {
     const { name, year } = req.params;
     var games = [];
-    db.select('*').from('Games')/*.where({id})*/
+    db.select('*').from('games')/*.where({id})*/
     /*.then(
         res.json(savedGames)
     )*/
     .then(fetchedGames => {
         fetchedGames.forEach(game => {
             games.push({
-                    id: game.Id, 
-                    time: game.Time,
-                    round: game.Round,
-                    homeTeam: game.HomeTeam,
-                    awayTeam: game.AwayTeam,
-                    homeGoals: game.HomeGoals,
-                    awayGoals: game.AwayGoals,
-                    isPlayed: game.IsPlayed,
-                    index: game.SeasonIndex
+                    id: game.id, 
+                    time: game.time,
+                    round: game.round,
+                    homeTeam: game.hometeam,
+                    awayTeam: game.awayteam,
+                    homeGoals: game.homegoals,
+                    awayGoals: game.awaygoals,
+                    isPlayed: game.isplayed,
+                    index: game.seasonindex
                 })
         })
         res.contentType('application/json');
@@ -33,21 +33,21 @@ handleBootstrap = (req, res, db)  => {
         console.log("Game: " + game.HomeTeam + " vs. " + game.AwayTeam);
         console.log("Games: " + game[0].AwayTeam);
     })*/
-    games.games.forEach((game, index) => {
+    savedGames.games.forEach((game, index) => {
         console.log(game.homeTeam + " vs. " + game.awayTeam);
         db.transaction(trx => {
             trx.insert({
-                Id : game.id,
-                Time : game.time,
-                Round : game.round,
-                HomeTeam : game.homeTeam,
-                AwayTeam : game.awayTeam,
-                HomeGoals : game.homeGoals,
-                AwayGoals : game.awayGoals,
-                IsPlayed : game.isPlayed,
-                SeasonIndex : game.index
+                id : game.id,
+                time : game.time,
+                round : game.round,
+                hometeam : game.homeTeam,
+                awayteam : game.awayTeam,
+                homegoals : game.homeGoals,
+                awaygoals : game.awayGoals,
+                isplayed : game.isPlayed,
+                seasonindex : game.index
             })
-            .into('Games')
+            .into('games')
             .then(trx.commit)
             })
         })
@@ -57,17 +57,17 @@ handleBootstrap = (req, res, db)  => {
 handleUpdate = (req, res, db)  => {
     const { homeTeam, awayTeam, homeGoals, awayGoals, isPlayed } = req.body;
     if (isPlayed) {
-        db('Games')
-            .where('HomeTeam', '=', homeTeam)
-            .where('AwayTeam', '=', awayTeam)
-            .update('IsPlayed', isPlayed)
+        db('games')
+            .where('hometeam', '=', homeTeam)
+            .where('awayteam', '=', awayTeam)
+            .update('isplayed', isPlayed)
             .catch((err) => console.log(err));
     }
-    var returnValue = db('Games')
-        .where('HomeTeam', '=', homeTeam)
-        .where('AwayTeam', '=', awayTeam)
-        .update('HomeGoals', homeGoals)
-        .update('AwayGoals', awayGoals)
+    var returnValue = db('games')
+        .where('hometeam', '=', homeTeam)
+        .where('awayteam', '=', awayTeam)
+        .update('homegoals', homeGoals)
+        .update('awaygoals', awayGoals)
         .catch((err) => console.log(err));
         res.json('OK' + returnValue);
 }
