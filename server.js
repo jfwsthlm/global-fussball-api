@@ -40,6 +40,6 @@ app.get('/bootstrap', (req, res) => { season.handleBootstrap(req, res, db) })
 
 app.put('/update', (req, res) => { season.handleUpdate(req, res, db) })
 
-app.listen(4000, () => {
-    console.log('app is running on port 4000');
+app.listen(process.env.PORT, () => {
+    console.log('app is running on port ' + process.env.PORT);
 })
